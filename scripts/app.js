@@ -3,10 +3,14 @@ const card = document.querySelector('.card');
 const city_time = document.querySelector('img.city_time');
 const weather_icon = document.querySelector('.weather_icon img')
 const weather_details = document.querySelector('.weather_details');
+// const clock = document.querySelector('.clock');
 
+// const reg = / T([0-9]{2}\:[0-9]{2}\:[0-9]{2})\+ /g;
 //update UI
 const updateUi = (data) => {
     const {cityDetails, weather} = data;
+    const clock = weather.LocalObservationDateTime;
+    // console.log(clock.match(reg));
     weather_details.innerHTML = 
     `
         <h5 class="my-3">${cityDetails.EnglishName}</h5>
@@ -16,7 +20,7 @@ const updateUi = (data) => {
         <span>&deg;C</span>
         </div>
         <div class="clock my-3 mx-2 float-right">
-            <span>Clock</span>
+            <span>${weather.LocalObservationDateTime}</span>
         </div>  
     `;
 
@@ -33,10 +37,6 @@ const updateUi = (data) => {
         card.classList.remove('d-none');
     }
 
-    //clock
-    setInterval(()=>{
-        
-    },)
 };
 
 //update city UI
@@ -64,6 +64,17 @@ cityForm.addEventListener('submit', e => {
     }).catch(err => {
         console.log(err);
     });
+
+    //store city in local storage
+    localStorage.setItem('city', city);
     
 });
+
+if(localStorage.getItem('city')){
+    updateCity(localStorage.getItem('city'))
+        .then(data => {
+            updateUi(data);
+        })
+        .catch(err => console.log(err));    
+}
 
