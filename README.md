@@ -1,2 +1,31 @@
 # Weather-forecast
 A weather forecast project using html, css, js and accuWeather api. 
+
+## Developed using 
+> ### Languages:<br>
+  > 1. HTML
+  > 2. CSS
+  > 3. JAVASCRIPT<br>
+> ### Api: 
+  > * [accuWeather](https://developer.accuweather.com/) 
+ 
+***
+
+## Features
+* Shows Weather according to given locations
+* Shows temperature in °C
+* Shows Day or Night 
+* Shows Time
+
+***
+
+## Preview
+* Location of Manchester
+<img src="screenshots/screenshot 1.png" width="100%" height="500"> &nbsp;
+***
+* Location of Kathmandu
+<img src="screenshots/screenshot 2.png" width="100%" height="500"> &nbsp;
+
+
+
+
