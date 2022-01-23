@@ -1,6 +1,11 @@
 # Weather-forecast
 A weather forecast project using html, css, js and accuWeather api. 
 
+## Note:
+ ### You can find the source code in master branch
+
+***
+
 ## Developed using 
 > ### Languages:<br>
   > 1. HTML
