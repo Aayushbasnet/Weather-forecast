@@ -53,7 +53,7 @@ cityForm.addEventListener('submit', e => {
     //get city from user
     const city = cityForm.city.value.trim();
     //reset form
-    cityForm.reset();
+    // cityForm.reset();
 
     //update city 
     forecast.updateCity(city).then(data => {

@@ -7,7 +7,7 @@ body{
   .container{
     max-width: 400px;
   }
-  
+    
   .weather_icon{
     position: relative;
     border-radius: 50%;
