@@ -16,6 +16,7 @@ A weather forecast project using html, css, js and accuWeather api.
 * Shows temperature in °C
 * Shows Day or Night 
 * Shows Time
+* Stores recent search in local storage
 
 ***
 
