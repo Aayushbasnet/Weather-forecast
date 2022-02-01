@@ -1,0 +1,24 @@
+body{
+    background: #eeedec;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+  }
+  
+  .container{
+    max-width: 400px;
+  }
+    
+  .weather_icon{
+    position: relative;
+    border-radius: 50%;
+    top: -50px;
+    margin-bottom: -50px;
+    width: 100px;
+  }
+  
+  .suggestions{
+    text-align: start;
+  }
+  .suggestions li{
+    list-style: none;
+  }
